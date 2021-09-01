@@ -3,13 +3,28 @@ Apache JMeter is an Apache project that can be used as a unit-test tool for JDBC
 
 Full Description: 
 
-In this exercise, I have tried exploring many great features offered by Jmeter and provided code for the same. The features explored are:
+In this exercise, I have tried exploring many great features offered by Jmeter and provided code for the same.
 
-- Configuring a Python based web server and hitting GET/POST APIs utilizing Jmeter functions: RequestHeaders, HTTPRequest, ResponseAssertions, JSONParsing, Bean Shell pre-processor/post-processor, etc.
-- Firing SQL Queries to Mysql server and asserting response using Bean Shell post-processor, Response Parsing, etc.
-- Writing a sample custom JAVA code to generate random images and exporting that JAR to be utilized by Jmeter for image uploading
-- Viewing Results/Graphs from Jmeter runs
-- Running Jmeter in non-GUI mode
+Setup:
+- Setup a Python based HTTP web server to accept GET/POST requests (code sample attached)
+
+- Setup a Python based Flask server to receive images uploaded by end user (code sample attached)
+
+- Setup Mysql server on local/remote machine, instructions: https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/
+
+Jmeter Features Explored:
+- Submitting GET based HTTP requests to web server and then asserting response by utilizing: ResponseAssertion and JSONAssertion
+
+- Submitting POST based HTTP requests to web server by utilizing BeanShell PreProcessor to send random IDs in payload and then asserting response by utilizing: ResponseAssertion and JSONAssertion
+
+- Initiating Database connections to fire SQL Queries to Mysql server and then asserting response using Bean Shell post-processor and ResponseAssertion.
+
+- Writing a custom JAVA code to generate random images, utilizing that code to upload images uploading to Python based Flask server and then asserting response by utilizing: ResponseAssertion and JSONAssertion
+
+- Exploring ViewResults, SummaryReport and GraphResults Listeners to monitor run results
+
+- Running Jmeter in non-GUI mode and validating results
+Load testing your application
 
 
 ## Configuration Steps
