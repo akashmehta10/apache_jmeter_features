@@ -1,7 +1,7 @@
 # Apache Jmeter Features
 Apache JMeter is an Apache project that can be used as a unit-test tool for JDBC database connections, FTP, LDAP, web services, JMS, HTTP, generic TCP connections and OS-native processes. One can also configure JMeter as a monitor, although this is typically used as a basic monitoring solution rather than advanced monitoring. It can be used for some functional testing as well.
 
-Full Description: 
+Full Description: https://medium.com/@akashmehta10/using-apache-jmeter-to-be-awesome-at-work-underrated-fun-feature-rich-tool-acb048c02507
 
 In this exercise, I have tried exploring many great features offered by Jmeter and provided code for the same.
 
