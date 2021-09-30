@@ -31,10 +31,10 @@ public class RandomImage {
         //create random image pixel by pixel
         for(int y = 0; y < height; y++){
             for(int x = 0; x < width; x++){
-                int a = (int)(Math.random()*256); //alpha
-                int r = (int)(Math.random()*256); //red
-                int g = (int)(Math.random()*256); //green
-                int b = (int)(Math.random()*256); //blue
+                int a = (int)(Math.random()*255); //alpha
+                int r = (int)(Math.random()*255); //red
+                int g = (int)(Math.random()*255); //green
+                int b = (int)(Math.random()*255); //blue
 
                 int p = (a<<24) | (r<<16) | (g<<8) | b; //pixel
 
